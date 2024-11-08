@@ -27,7 +27,7 @@ func (g *game) Update() error {
 
 func (g *game) Draw(screen *ebiten.Image) {
 	screen.Fill(color.RGBA{0, 64, 64, 255})
-	s := fmt.Sprintf("Hello, wasmgame!\nTicks = %d\nThe content of asset/sample.json is: %s", g.ticks, string(g.sampleJSON))
+	s := fmt.Sprintf("Hello, SAKAMOTOSAN!\nTicks = %d\nThe content of asset/sample.json is: %s", g.ticks, string(g.sampleJSON))
 	x, y := g.ticks%640, g.ticks%360
 	ebitenutil.DebugPrintAt(screen, s, x, y)
 }
