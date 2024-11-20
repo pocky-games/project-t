@@ -141,25 +141,25 @@ func (g *game) Layout(outsideWidth, outsideHeight int) (screenWidth, screenHeigh
 }
 
 func main() {
-	img, _, err := ebitenutil.NewImageFromFile("bg.png")
+	img, _, err := ebitenutil.NewImageFromFile("asset/bg.png")
 	if err != nil {
 		panic(err)
 	}
 	bg = img
 
-	img, _, err = ebitenutil.NewImageFromFile("person.png")
+	img, _, err = ebitenutil.NewImageFromFile("asset/person.png")
 	if err != nil {
 		panic(err)
 	}
 	person = img
 
-	img, _, err = ebitenutil.NewImageFromFile("cat.png")
+	img, _, err = ebitenutil.NewImageFromFile("asset/cat.png")
 	if err != nil {
 		panic(err)
 	}
 	cat = img
 
-	img, _, err = ebitenutil.NewImageFromFile("window.png")
+	img, _, err = ebitenutil.NewImageFromFile("asset/window.png")
 	if err != nil {
 		panic(err)
 	}
